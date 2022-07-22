@@ -141,12 +141,15 @@ proc fingerprintAuth*(): bool =
   ## Uses fingerprint to check for authentication. Returns true if it passed
   result = termuxRun(fmt"termux-fingerprint", JsonNode)["auth_result"].str == "AUTH_RESULT_SUCCESS"
 
-func newNotification*(title, content: string, id = ""): Notification =
+func initNotification*(title, content: string, id = ""): Notification =
+  ## Creates a new notification
   result.title = title
   result.content = content
   result.id = id
   
 proc show*(n: Notification) =
+  ## Shows a notification. If there is a previous notification with the same ID then
+  ## it overwrites that
   var options = fmt"-t {n.title.escape()} -c {n.content.escape()} "
   if n.id != "":
     options &= fmt"-i {n.id} "
