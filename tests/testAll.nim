@@ -3,7 +3,7 @@ import std/[
   times,
   os
 ]
-import termux
+import termuxApi
 
 ## Requires android device to run on 
 

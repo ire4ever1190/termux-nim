@@ -8,7 +8,7 @@ import std/[
 
 import jsony
 
-import termux/types
+import termuxApi/types
 
 # TODO: Add check that the package is installed
 # TODO: More helpful errors
