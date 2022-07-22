@@ -1,6 +1,8 @@
 
 Adds a wrapper around the programs provided in [termux-api](https://wiki.termux.com/wiki/Termux:API)
 
+[Docs here](https://tempdocs.netlify.app/termuxApi/stable)
+
 Support list (feel free to make a PR to support more)
  - [x] [termux-battery-status](https://wiki.termux.com/wiki/Termux-battery-status)
  - [x] [termux-brightness](https://wiki.termux.com/wiki/Termux-brightness)
