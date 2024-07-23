@@ -1,7 +1,7 @@
 
 Adds a wrapper around the programs provided in [termux-api](https://wiki.termux.com/wiki/Termux:API)
 
-[Docs here](https://tempdocs.netlify.app/termuxApi/stable)
+[Docs here](https://ire4ever1190.github.io/termuxApi)
 
 Support list (feel free to make a PR to support more)
  - [x] [termux-battery-status](https://wiki.termux.com/wiki/Termux-battery-status)
